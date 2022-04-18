@@ -1,4 +1,5 @@
 
+
 # Seam-Carving
 
 Technique to resized a images.One of the metrics that we can use is the value of the derivative at each point. This is a
@@ -22,5 +23,51 @@ and its neighbors. There are various possible ways to achive this
 
 ## Demo
 
+#### Removed Vertical-50 lines
+
+![alt text](https://github.com/ashishjamarkattel/Seam-Carving/blob/master/gif/6cxuph.gif)
+
+#### Resized in Time-stamp
 ![alt text](https://github.com/ashishjamarkattel/Seam-Carving/blob/master/gif/6cxurr.gif)
+
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/ashishjamarkattel/Seam-Carving
+```
+
+Go to the project directory
+
+```bash
+  cd [your directory_name]
+```
+
+Install dependencies
+
+```bash
+  pip install numpy
+  pip install opencv-python
+  pip install tqdm
+```
+
+Resize Your image
+
+```bash
+  python carving.py -i [image-name] -n [number of vertical line to remove] -sh
+```
+
+Help
+```bash
+  python carving.py -h
+```
+
+
+### 
+
+###
+
 
