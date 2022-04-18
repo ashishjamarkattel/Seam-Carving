@@ -115,8 +115,8 @@ if __name__== "__main__":
         img = remove_vertical_seam(seam,img)
         energy = energyMatrix(img)
         overlayImage = overlay_seam(seam,imgCopy)
-        cv.imwrite("resized/resized-img/resized"+str(i)+args.image,img)
-        cv.imwrite("resized/removed/removed"+str(i)+args.image,overlayImage)
+        # cv.imwrite("resized/resized-img/resized"+str(i)+args.image,img)
+        # cv.imwrite("resized/removed/removed"+str(i)+args.image,overlayImage)
         
 
     
@@ -128,9 +128,10 @@ if __name__== "__main__":
         cv.imshow("image",img)
         cv.imshow("Layers removed",overlayImage)
 
-    # if args.save:
-    #     cv.imwrite("resized/resized"+args.image,img)
-    #     cv.imwrite("resized/removed/removed"+args.image,overlayImage)
+    if args.save:
+        cv.imwrite("resized/resized"+args.image,img)
+        cv.imwrite("resized/removed/removed"+args.image,overlayImage)
 
     cv.waitKey(0)
+        
         
